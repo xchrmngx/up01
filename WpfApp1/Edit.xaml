@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Edit" Height="450" Width="800" Icon="/res/Мастер пол.png"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Тип партнера" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="combobox" HorizontalAlignment="Left" IsReadOnly="True" VerticalAlignment="Top" Width="120" Margin="250,125,0,0" Height="17"/>
+        <Label Content="Наименование партнера"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 150, 0,0" />
+        <TextBox Background="#F4E8D3" x:Name="partner_name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250, 155, 0,0" Width="120"/>
+        <Label Content="Директор" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 180, 0,0"/>
+        <TextBox PreviewKeyDown="director_PreviewKeyDown" Background="#F4E8D3" x:Name="director" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250, 185, 0,0" Width="120"/>
+        <Label Content="Электронная почта партнера" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 210, 0,0"/>
+        <TextBox Background="#F4E8D3" x:Name="email" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250, 215, 0,0" Width="120"/>
+        <Label Content="Телефон партнера" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="420, 120, 0,0"/>
+        <TextBox PreviewKeyDown="phone_PreviewKeyDown"  Background="#F4E8D3" x:Name="phone" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630, 125, 0,0" Width="120"/>
+        <Label Content="Юридический адрес партнера" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="420, 150, 0,0" />
+        <TextBox ToolTip="Внимание! Адрес пишется в следующем формате:&#x0a;Индекс, область, город, улица, номер дома" Background="#F4E8D3" x:Name="adres" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630, 155, 0,0" Width="120"/>
+        <Label Content="Рейтинг" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="420, 180, 0,0"/>
+        <TextBox PreviewKeyDown="rate_PreviewKeyDown" Background="#F4E8D3" x:Name="rate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630, 185, 0,0" Width="120"/>
+        <Button Background="#56BA80" x:Name="button" Click="button_Click" Content="Вернуться назад" HorizontalAlignment="Left" Margin="100,355,0,0" VerticalAlignment="Top"/>
+        <Button Background="#56BA80" Click="Button_Click_1" x:Name="button1" Content="Сохранить" HorizontalAlignment="Left" Margin="650,355,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

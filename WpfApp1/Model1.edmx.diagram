@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8cbe0536caa498196c67c2d4316bb7f" Name="Diagram1">
+        <EntityTypeShape EntityType="MasterFloor2Model.adress" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.cex" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.family_status" Width="1.5" PointX="10.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.history_changing_minimal_price" Width="1.5" PointX="8.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.history_provide_material" Width="1.5" PointX="13.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.history_sale_product" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.material" Width="1.5" PointX="16.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.materialType" Width="1.5" PointX="14" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.measurement" Width="1.5" PointX="14" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.packageSize" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.partnerContact" Width="1.5" PointX="3.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.partnerProducts" Width="1.5" PointX="11.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.partners" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.partnerType" Width="1.5" PointX="3.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.passport" Width="1.5" PointX="13" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.products" Width="1.5" PointX="6" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.productType" Width="1.5" PointX="3.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.provider" Width="1.5" PointX="11" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.requisites" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.salesPoints" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloor2Model.typeProvider" Width="1.5" PointX="8.75" PointY="11.625" IsExpanded="true" />
+        <AssociationConnector Association="MasterFloor2Model.FK_cex_adress" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_partners_adress" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_salesPoints_adress" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_passport_family_status" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_history_changing_minimal_price_products" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_history_provide_material_products" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_history_provide_material_provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_history_sale_product_partners" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_history_sale_product_products" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_material_materialType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_material_measurement" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_material_provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_partners_partnerContact" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_partnerProducts_partners" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_partnerProducts_products" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_partners_partnerType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_salesPoints_partners" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_products_productType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloor2Model.FK_provider_typeProvider" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

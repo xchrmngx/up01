@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp1.Istoriya"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Istoriya" Height="450" Width="800" Icon="/res/Мастер пол.png">
+    <Window.Resources>
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#FFF4E8D3" />
+            <!-- Цвет фона заголовков -->
+            <Setter Property="Foreground" Value="#FFF4E8D3" />
+            <!-- Цвет текста заголовков -->
+            <Setter Property="BorderBrush" Value="#000000"/>
+            <Setter Property="FontFamily" Value="Segoi UI" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <Style TargetType="DataGridCell">
+            <Setter Property="Background" Value="#FFF4E8D3" />
+            <!-- Цвет фона ячеек -->
+            <Setter Property="Foreground" Value="#000000" />
+            <!-- Цвет текста ячеек -->
+            <Setter Property="BorderBrush" Value="#FFF4E8D3"/>
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+    </Window.Resources>
+    <Grid Margin="0,0,10,-6">
+        <Button x:Name="button" Content="Назад" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Width="216" Click="button1_Click" Background="#FF67BA80"/>
+        <DataGrid Background="#FFF4E8D3" x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,115" BorderBrush="#FFF4E8D3" OpacityMask="#FFF4E8D3" Foreground="Black"/>
+    </Grid>
+</Window>
